@@ -5,5 +5,7 @@ def number(x):
         guess = x
         if guess != rNumber :
             print("Sorry Wrong Number")
+        elif guess == rNumber :
+            print("Nice Job!")
 
 number (2)
