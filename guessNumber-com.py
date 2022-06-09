@@ -1,11 +1,11 @@
 import random
 
-def number(x):
+def number():
         rNumber = random.randint(0, 3)
-        guess = x
+        guess = int(input("Guess a Number from 0 to 3! "))
         if guess != rNumber :
             print("Sorry Wrong Number")
         elif guess == rNumber :
             print("Nice Job!")
 
-number (2)
+number ()
