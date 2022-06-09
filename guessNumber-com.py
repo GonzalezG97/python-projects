@@ -1,8 +1,9 @@
 import random
 
 def number(x):
-        rNumber = random.randint(0, 25)
-        print(rNumber)
-        
+        rNumber = random.randint(0, 3)
+        guess = x
+        if guess != rNumber :
+            print("Sorry Wrong Number")
 
-number (4)
+number (2)
