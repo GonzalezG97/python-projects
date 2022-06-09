@@ -7,5 +7,6 @@ def number():
             print("Sorry Wrong Number")
         elif guess == rNumber :
             print("Nice Job!")
+        number()
 
 number ()
