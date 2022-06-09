@@ -1,5 +1,5 @@
 print("hello world")
-feeling = input("What is it? ")
-if feeling == "Nothing" :
-    print("cool")
+feeling = input("How do you feel? ")
+if str(feeling) == "excited" :
+    print("Awesome!")
 
