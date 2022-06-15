@@ -9,6 +9,8 @@ def computer_guess(x):
         feedback = input(f'Is this {compNum} too high (H), too low (L) or correct (C)? ').lower()
         if feedback == 'h':
             high = compNum - 1
-        
+        elif feedback == 'l':
+            low = compNum -1
+    print('The computer figured out your number!')
 
 computer_guess(5)
