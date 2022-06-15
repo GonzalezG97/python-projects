@@ -1,5 +1,5 @@
 import random
-
+#We are going to try to guess the computers number
 def number(x):
         rNumber = random.randint(1, x)
         guess = 0
