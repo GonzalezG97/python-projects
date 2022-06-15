@@ -4,12 +4,14 @@ def play():
     user = input('Rock(R), Paper(P), Scissors(S) ').lower()
     comp = random.choice(['r', 'p', 's'])
     if user == comp:
-        return "Its a tie"
+        print("Its a tie")
     if winCon(user, comp):
-        return "Victory for you and your family!"
+        print("Victory for you and your family!")
+    
+    print('Better luck next time!')
 
-def winCon(user, comp):
-    if (user == 'r' and comp == 's') or (user == 'p' and comp == 'r') or (user == 's' and comp == 'p'):
+def winCon(player, computer):
+    if (player == 'r' and computer == 's') or (player == 'p' and computer == 'r') or (player == 's' and computer == 'p'):
         return True
 
 play()
