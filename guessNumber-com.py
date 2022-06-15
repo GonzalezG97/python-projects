@@ -1,12 +1,19 @@
 import random
 
-def number():
-        rNumber = random.randint(0, 3)
-        guess = int(input("Guess a Number from 0 to 3! "))
-        if guess != rNumber :
-            print("Sorry Wrong Number")
-        elif guess == rNumber :
-            print("Nice Job!")
-        number()
+def number(x):
+        rNumber = random.randint(1, x)
+        guess = 0
+        while guess != rNumber :
+            guess = int(input(f"Guess a Number from 1 to {x}! "))
+            if guess == rNumber :
+                x = input(print("Nice Job! Do you want to play again?"))
+                if x == 'y':
+                    number(5)
+                    continue
+                elif x == 'n':
+                    break
+                else: 
+                    print("Y or N?")
+        print("Good bye!")
 
-number ()
+number (3)
