@@ -1,5 +1,5 @@
 import random
-
+#User creates range and comp guess random number chosen by the computer
 def autoGuess():
     firstNum = int(input('What should be the lower number be? '))
     secNum = int(input('What should the highest number be? '))
@@ -8,6 +8,6 @@ def autoGuess():
     while guess != magicNum:
         guess = random.randint(firstNum,secNum)
         print('Missed the mark, keep trying')
-    print('Nice job!')
+    print(f'Nice job! The number was {magicNum}')
 
 autoGuess()
